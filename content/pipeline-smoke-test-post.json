@@ -1,0 +1,10 @@
+{
+  "slug": "pipeline-smoke-test-post",
+  "title": "Pipeline smoke test post",
+  "date": "2026-10-12",
+  "excerpt": "This is a throwaway node created to smoke-test the InfoNode to blog.yarrasoftware.com publish pipeline. It should become a blog post and a LinkedIn draft, then…",
+  "tags": [
+    "test"
+  ],
+  "nodeId": "358eee55-8616-4e50-bd07-515ec179d587"
+}
