@@ -35,19 +35,19 @@ footer a { color:#fff; }
 const HEADER = `
 <header>
   <div class="wrap">
-    <a class="logo" href="https://yarrasoftware.com/">Yarra<span>Software</span></a>
+    <a class="logo" href="https://new.yarrasoftware.com/">Yarra<span>Software</span></a>
     <nav>
-      <a href="https://yarrasoftware.com/#products">Products</a>
-      <a href="https://yarrasoftware.com/#services">Services</a>
+      <a href="https://new.yarrasoftware.com/#products">Products</a>
+      <a href="https://new.yarrasoftware.com/#services">Services</a>
       <a href="/">Blog</a>
-      <a href="https://yarrasoftware.com/#contact">Contact</a>
+      <a href="https://new.yarrasoftware.com/#contact">Contact</a>
     </nav>
   </div>
 </header>`;
 
 const FOOTER = `
 <footer>
-  <div class="wrap">© ${new Date().getFullYear()} Yarra Software Ltd · <a href="https://yarrasoftware.com/">yarrasoftware.com</a></div>
+  <div class="wrap">© ${new Date().getFullYear()} Yarra Software Ltd · <a href="https://new.yarrasoftware.com/">yarrasoftware.com</a></div>
 </footer>`;
 
 function shell({ title, description, bodyClass, body }) {
