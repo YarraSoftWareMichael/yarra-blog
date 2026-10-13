@@ -60,9 +60,9 @@ fs.writeFileSync(path.join('content', `${slug}.html`), toHtml(node.content));
 
 execSync('node build.js', { stdio: 'inherit' });
 
-execSync('git add content');
+execSync('git add content docs');
 execSync(`git commit -m "Publish: ${node.title}"`, { stdio: 'inherit' });
-console.log('\nCommitted locally. Run `git push` to go live (Netlify auto-deploys on push).');
+console.log('\nCommitted locally. Run `git push` to go live (GitHub Pages serves main:/docs).');
 
 const liveUrl = `${BLOG_URL}/${slug}/`;
 const li = await fetch(`${INFONODE_URL}/api/nodes/${node.id}/linkedin`, {

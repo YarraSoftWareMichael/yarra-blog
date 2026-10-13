@@ -3,7 +3,7 @@ import path from 'node:path';
 import { postPage, indexPage } from './template.js';
 
 const CONTENT_DIR = './content';
-const DIST_DIR = './dist';
+const DIST_DIR = './docs'; // GitHub Pages serves main:/docs
 
 fs.rmSync(DIST_DIR, { recursive: true, force: true });
 fs.mkdirSync(DIST_DIR, { recursive: true });
@@ -25,5 +25,7 @@ for (const post of posts) {
 }
 
 fs.writeFileSync(path.join(DIST_DIR, 'index.html'), indexPage(posts));
+fs.writeFileSync(path.join(DIST_DIR, 'CNAME'), 'blog.yarrasoftware.com\n');
+fs.writeFileSync(path.join(DIST_DIR, '.nojekyll'), '');
 
 console.log(`Built ${posts.length} post(s) -> ${DIST_DIR}/`);
